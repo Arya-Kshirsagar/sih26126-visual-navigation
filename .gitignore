@@ -1,0 +1,18 @@
+# build / runtime output
+build/
+install/
+log/
+__pycache__/
+*.pyc
+# generated or local data
+launch/nav2_params.yaml
+*.csv
+*.bak
+*.save
+*.db
+seg_test_out/
+# large binaries - download separately (see README)
+*.pth
+*.pt
+*.zip
+*.tgz

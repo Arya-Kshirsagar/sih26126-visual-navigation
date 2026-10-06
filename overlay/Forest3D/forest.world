@@ -1,0 +1,1383 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+    <world name="terrain_test">
+        <scene>
+            <ambient>0.35 0.38 0.45 1</ambient>
+            <background>0.35 0.55 0.85 1</background>
+            <sky></sky>
+        </scene>
+        <physics name="1ms" type="ignored">
+            <max_step_size>0.004</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <gravity>0 0 -9.8</gravity>
+        <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+        <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+        <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+        <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+        <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+        <light name="sun" type="directional">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>1.0 1.0 1.0 1</diffuse>
+            <specular>0.5 0.5 0.5 1</specular>
+            <direction>-0.5 0.1 -0.9</direction>
+        </light>
+        <include>
+            <name>terrain</name>
+            <uri>model://ground</uri>
+        </include>
+        <include>
+      <name>Oak_tree_1</name>
+      <uri>model://Oak tree</uri>
+      <pose>0.74 -26.46 38.35 0 0 3.661</pose>
+    </include>
+    <include>
+      <name>Oak_tree_2</name>
+      <uri>model://Oak tree</uri>
+      <pose>-19.28 -26.56 39.35 0 0 6.131</pose>
+    </include>
+    <include>
+      <name>Oak_tree_3</name>
+      <uri>model://Oak tree</uri>
+      <pose>-15.78 -24.02 39.35 0 0 2.632</pose>
+    </include>
+    <include>
+      <name>Oak_tree_4</name>
+      <uri>model://Oak tree</uri>
+      <pose>-23.89 0.97 42.70 0 0 5.125</pose>
+    </include>
+    <include>
+      <name>Oak_tree_5</name>
+      <uri>model://Oak tree</uri>
+      <pose>19.00 -20.30 39.86 0 0 1.180</pose>
+    </include>
+    <include>
+      <name>Oak_tree_6</name>
+      <uri>model://Oak tree</uri>
+      <pose>-14.37 -23.30 39.39 0 0 0.374</pose>
+    </include>
+    <include>
+      <name>Oak_tree_7</name>
+      <uri>model://Oak tree</uri>
+      <pose>-1.42 -27.11 38.09 0 0 4.881</pose>
+    </include>
+    <include>
+      <name>Oak_tree_8</name>
+      <uri>model://Oak tree</uri>
+      <pose>-36.78 -4.59 40.94 0 0 1.883</pose>
+    </include>
+    <include>
+      <name>Oak_tree_9</name>
+      <uri>model://Oak tree</uri>
+      <pose>1.86 35.08 46.26 0 0 0.514</pose>
+    </include>
+    <include>
+      <name>Oak_tree_10</name>
+      <uri>model://Oak tree</uri>
+      <pose>-15.83 -11.49 41.68 0 0 4.581</pose>
+    </include>
+    <include>
+      <name>Oak_tree_11</name>
+      <uri>model://Oak tree</uri>
+      <pose>-0.42 -10.82 40.13 0 0 3.215</pose>
+    </include>
+    <include>
+      <name>Oak_tree_12</name>
+      <uri>model://Oak tree</uri>
+      <pose>9.89 -32.53 38.85 0 0 3.071</pose>
+    </include>
+    <include>
+      <name>Oak_tree_13</name>
+      <uri>model://Oak tree</uri>
+      <pose>-7.76 -23.20 38.52 0 0 3.505</pose>
+    </include>
+    <include>
+      <name>Oak_tree_14</name>
+      <uri>model://Oak tree</uri>
+      <pose>0.71 15.41 44.24 0 0 4.366</pose>
+    </include>
+    <include>
+      <name>Oak_tree_15</name>
+      <uri>model://Oak tree</uri>
+      <pose>-45.67 -3.91 38.63 0 0 0.432</pose>
+    </include>
+    <include>
+      <name>Oak_tree_16</name>
+      <uri>model://Oak tree</uri>
+      <pose>-1.68 -25.82 38.30 0 0 4.171</pose>
+    </include>
+    <include>
+      <name>Oak_tree_17</name>
+      <uri>model://Oak tree</uri>
+      <pose>-12.19 -30.04 37.75 0 0 3.630</pose>
+    </include>
+    <include>
+      <name>Oak_tree_18</name>
+      <uri>model://Oak tree</uri>
+      <pose>-24.31 -32.82 39.51 0 0 2.423</pose>
+    </include>
+    <include>
+      <name>Oak_tree_19</name>
+      <uri>model://Oak tree</uri>
+      <pose>-39.77 -8.66 40.72 0 0 2.232</pose>
+    </include>
+    <include>
+      <name>Oak_tree_20</name>
+      <uri>model://Oak tree</uri>
+      <pose>-27.27 -2.14 42.46 0 0 4.825</pose>
+    </include>
+    <include>
+      <name>Oak_tree_21</name>
+      <uri>model://Oak tree</uri>
+      <pose>9.00 -36.41 38.57 0 0 5.758</pose>
+    </include>
+    <include>
+      <name>Oak_tree_22</name>
+      <uri>model://Oak tree</uri>
+      <pose>-19.69 5.24 43.30 0 0 3.450</pose>
+    </include>
+    <include>
+      <name>Oak_tree_23</name>
+      <uri>model://Oak tree</uri>
+      <pose>17.24 -43.67 37.84 0 0 1.748</pose>
+    </include>
+    <include>
+      <name>Oak_tree_24</name>
+      <uri>model://Oak tree</uri>
+      <pose>-14.70 -0.68 43.22 0 0 2.389</pose>
+    </include>
+    <include>
+      <name>Oak_tree_25</name>
+      <uri>model://Oak tree</uri>
+      <pose>12.93 -22.81 39.75 0 0 1.457</pose>
+    </include>
+    <include>
+      <name>Oak_tree_26</name>
+      <uri>model://Oak tree</uri>
+      <pose>26.58 -26.08 38.27 0 0 1.145</pose>
+    </include>
+    <include>
+      <name>Oak_tree_27</name>
+      <uri>model://Oak tree</uri>
+      <pose>11.67 -8.35 40.67 0 0 2.319</pose>
+    </include>
+    <include>
+      <name>Oak_tree_28</name>
+      <uri>model://Oak tree</uri>
+      <pose>-31.55 -0.01 41.32 0 0 5.396</pose>
+    </include>
+    <include>
+      <name>Oak_tree_29</name>
+      <uri>model://Oak tree</uri>
+      <pose>-37.90 -16.46 41.37 0 0 2.868</pose>
+    </include>
+    <include>
+      <name>Oak_tree_30</name>
+      <uri>model://Oak tree</uri>
+      <pose>-1.40 2.91 42.49 0 0 5.011</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_31</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-35.51 5.86 39.28 0 0 3.024</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_32</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-25.18 1.76 42.38 0 0 1.311</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_33</name>
+      <uri>model://Pine Tree</uri>
+      <pose>19.06 -19.59 39.86 0 0 0.643</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_34</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-27.18 -0.86 42.13 0 0 2.283</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_35</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-5.72 -19.72 38.89 0 0 2.363</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_36</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-27.65 -17.88 42.05 0 0 2.287</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_37</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-3.48 -15.44 39.49 0 0 6.141</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_38</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-32.08 0.86 40.99 0 0 0.642</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_39</name>
+      <uri>model://Pine Tree</uri>
+      <pose>1.67 -18.85 39.06 0 0 4.346</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_40</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-7.73 -1.05 42.60 0 0 3.317</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_41</name>
+      <uri>model://Pine Tree</uri>
+      <pose>2.33 -45.91 37.68 0 0 4.761</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_42</name>
+      <uri>model://Pine Tree</uri>
+      <pose>20.09 -11.01 40.61 0 0 4.372</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_43</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-17.24 -10.86 42.12 0 0 2.234</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_44</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-5.65 -30.54 37.59 0 0 2.070</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_45</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-2.35 -37.72 37.48 0 0 4.762</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_46</name>
+      <uri>model://Pine Tree</uri>
+      <pose>15.40 -42.97 38.02 0 0 4.646</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_47</name>
+      <uri>model://Pine Tree</uri>
+      <pose>12.91 -17.39 40.09 0 0 4.591</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_48</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-8.74 -32.20 37.30 0 0 1.216</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_49</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-20.16 -6.89 42.74 0 0 5.884</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_50</name>
+      <uri>model://Pine Tree</uri>
+      <pose>10.53 -10.99 40.33 0 0 1.385</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_51</name>
+      <uri>model://Pine Tree</uri>
+      <pose>1.63 -25.84 38.50 0 0 3.031</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_52</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-24.07 -12.92 42.38 0 0 4.101</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_53</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-15.45 7.55 43.64 0 0 0.753</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_54</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-25.27 -14.21 42.26 0 0 3.002</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_55</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-2.05 -22.20 38.53 0 0 0.545</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_56</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-34.76 -20.64 41.74 0 0 5.946</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_57</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-12.14 -2.33 42.73 0 0 0.173</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_58</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-16.12 -13.43 41.68 0 0 0.918</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_59</name>
+      <uri>model://Pine Tree</uri>
+      <pose>-13.24 15.14 44.00 0 0 5.887</pose>
+    </include>
+    <include>
+      <name>Pine_Tree_60</name>
+      <uri>model://Pine Tree</uri>
+      <pose>5.11 -28.80 38.76 0 0 0.089</pose>
+    </include>
+    <include>
+      <name>falling_rock1_61</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-34.02 -35.09 40.70 0 0 5.863</pose>
+    </include>
+    <include>
+      <name>falling_rock1_62</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-22.38 -0.02 43.01 0 0 5.488</pose>
+    </include>
+    <include>
+      <name>falling_rock1_63</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-11.36 -14.85 40.41 0 0 1.511</pose>
+    </include>
+    <include>
+      <name>falling_rock1_64</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-34.79 5.78 39.48 0 0 5.239</pose>
+    </include>
+    <include>
+      <name>falling_rock1_65</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-4.17 -26.85 37.93 0 0 2.877</pose>
+    </include>
+    <include>
+      <name>falling_rock1_66</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-25.29 -14.21 42.26 0 0 5.194</pose>
+    </include>
+    <include>
+      <name>falling_rock1_67</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-26.08 -0.46 42.30 0 0 3.206</pose>
+    </include>
+    <include>
+      <name>falling_rock1_68</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-10.15 23.02 44.59 0 0 0.025</pose>
+    </include>
+    <include>
+      <name>falling_rock1_69</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-1.90 24.94 45.32 0 0 3.888</pose>
+    </include>
+    <include>
+      <name>falling_rock1_70</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-18.77 -25.12 39.83 0 0 3.255</pose>
+    </include>
+    <include>
+      <name>falling_rock1_71</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-45.09 -2.54 38.26 0 0 5.547</pose>
+    </include>
+    <include>
+      <name>falling_rock1_72</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-11.21 -15.10 40.41 0 0 4.850</pose>
+    </include>
+    <include>
+      <name>falling_rock1_73</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-31.64 -3.61 41.63 0 0 5.614</pose>
+    </include>
+    <include>
+      <name>falling_rock1_74</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-22.89 -18.02 41.86 0 0 3.175</pose>
+    </include>
+    <include>
+      <name>falling_rock1_75</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-27.33 2.64 42.09 0 0 3.191</pose>
+    </include>
+    <include>
+      <name>falling_rock1_76</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-26.07 23.87 39.49 0 0 4.391</pose>
+    </include>
+    <include>
+      <name>falling_rock1_77</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>19.12 -17.47 40.08 0 0 1.272</pose>
+    </include>
+    <include>
+      <name>falling_rock1_78</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-25.30 3.95 42.09 0 0 2.777</pose>
+    </include>
+    <include>
+      <name>falling_rock1_79</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-15.80 -30.72 38.41 0 0 1.336</pose>
+    </include>
+    <include>
+      <name>falling_rock1_80</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>6.36 -27.35 38.90 0 0 0.970</pose>
+    </include>
+    <include>
+      <name>falling_rock1_81</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-32.86 -32.93 40.99 0 0 1.590</pose>
+    </include>
+    <include>
+      <name>falling_rock1_82</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>15.87 -28.65 39.24 0 0 5.982</pose>
+    </include>
+    <include>
+      <name>falling_rock1_83</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-24.27 -3.07 42.77 0 0 4.194</pose>
+    </include>
+    <include>
+      <name>falling_rock1_84</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>14.71 -19.24 39.98 0 0 3.238</pose>
+    </include>
+    <include>
+      <name>falling_rock1_85</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-5.14 -4.58 41.58 0 0 0.579</pose>
+    </include>
+    <include>
+      <name>falling_rock1_86</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>13.65 -7.20 40.80 0 0 2.766</pose>
+    </include>
+    <include>
+      <name>falling_rock1_87</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-19.39 -15.13 41.62 0 0 1.855</pose>
+    </include>
+    <include>
+      <name>falling_rock1_88</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>4.02 -9.22 40.05 0 0 1.435</pose>
+    </include>
+    <include>
+      <name>falling_rock1_89</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-5.08 -18.73 39.04 0 0 5.689</pose>
+    </include>
+    <include>
+      <name>falling_rock1_90</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>9.05 -22.66 39.44 0 0 2.652</pose>
+    </include>
+    <include>
+      <name>falling_rock1_91</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-24.61 -32.51 39.51 0 0 0.938</pose>
+    </include>
+    <include>
+      <name>falling_rock1_92</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-42.22 -10.24 40.46 0 0 0.562</pose>
+    </include>
+    <include>
+      <name>falling_rock1_93</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-9.52 -27.80 37.95 0 0 5.622</pose>
+    </include>
+    <include>
+      <name>falling_rock1_94</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>14.12 -13.42 40.43 0 0 5.034</pose>
+    </include>
+    <include>
+      <name>falling_rock1_95</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-16.24 -26.36 38.87 0 0 1.661</pose>
+    </include>
+    <include>
+      <name>falling_rock1_96</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-19.12 -20.00 40.76 0 0 3.473</pose>
+    </include>
+    <include>
+      <name>falling_rock1_97</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>0.37 -10.45 40.04 0 0 4.456</pose>
+    </include>
+    <include>
+      <name>falling_rock1_98</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-4.39 -23.69 38.32 0 0 1.138</pose>
+    </include>
+    <include>
+      <name>falling_rock1_99</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-5.35 -16.61 39.30 0 0 1.293</pose>
+    </include>
+    <include>
+      <name>falling_rock1_100</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-33.92 0.47 40.76 0 0 2.179</pose>
+    </include>
+    <include>
+      <name>falling_rock1_101</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-8.81 -22.43 38.71 0 0 0.116</pose>
+    </include>
+    <include>
+      <name>falling_rock1_102</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-35.14 -6.09 41.25 0 0 2.981</pose>
+    </include>
+    <include>
+      <name>falling_rock1_103</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-15.22 10.78 43.81 0 0 2.714</pose>
+    </include>
+    <include>
+      <name>falling_rock1_104</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-46.37 -4.89 38.68 0 0 6.094</pose>
+    </include>
+    <include>
+      <name>falling_rock1_105</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-7.46 -32.25 37.39 0 0 2.152</pose>
+    </include>
+    <include>
+      <name>falling_rock1_106</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>5.89 11.09 43.22 0 0 0.877</pose>
+    </include>
+    <include>
+      <name>falling_rock1_107</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>19.33 -10.54 40.71 0 0 0.090</pose>
+    </include>
+    <include>
+      <name>falling_rock1_108</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-27.92 -33.10 40.50 0 0 1.025</pose>
+    </include>
+    <include>
+      <name>falling_rock1_109</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-15.75 -29.94 38.41 0 0 3.177</pose>
+    </include>
+    <include>
+      <name>falling_rock1_110</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-8.95 -16.64 39.57 0 0 0.284</pose>
+    </include>
+    <include>
+      <name>falling_rock1_111</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>15.03 -19.19 39.98 0 0 1.653</pose>
+    </include>
+    <include>
+      <name>falling_rock1_112</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>13.46 -10.53 40.61 0 0 1.535</pose>
+    </include>
+    <include>
+      <name>falling_rock1_113</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>3.44 -2.99 41.13 0 0 2.106</pose>
+    </include>
+    <include>
+      <name>falling_rock1_114</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-21.78 -20.66 41.18 0 0 1.262</pose>
+    </include>
+    <include>
+      <name>falling_rock1_115</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-28.96 -8.12 42.35 0 0 5.131</pose>
+    </include>
+    <include>
+      <name>falling_rock1_116</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>7.54 -25.81 39.13 0 0 0.141</pose>
+    </include>
+    <include>
+      <name>falling_rock1_117</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-0.30 -11.35 39.91 0 0 6.014</pose>
+    </include>
+    <include>
+      <name>falling_rock1_118</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-4.79 7.74 43.69 0 0 4.496</pose>
+    </include>
+    <include>
+      <name>falling_rock1_119</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-35.75 0.87 40.19 0 0 6.184</pose>
+    </include>
+    <include>
+      <name>falling_rock1_120</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>7.00 -15.15 39.70 0 0 0.909</pose>
+    </include>
+    <include>
+      <name>falling_rock1_121</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>4.86 4.59 42.21 0 0 3.940</pose>
+    </include>
+    <include>
+      <name>falling_rock1_122</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-30.76 -36.37 40.25 0 0 5.714</pose>
+    </include>
+    <include>
+      <name>falling_rock1_123</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-21.91 20.45 41.69 0 0 5.053</pose>
+    </include>
+    <include>
+      <name>falling_rock1_124</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-11.09 6.09 43.78 0 0 4.466</pose>
+    </include>
+    <include>
+      <name>falling_rock1_125</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-29.90 -29.16 41.06 0 0 0.263</pose>
+    </include>
+    <include>
+      <name>falling_rock1_126</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-30.24 -22.94 41.82 0 0 5.249</pose>
+    </include>
+    <include>
+      <name>falling_rock1_127</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-27.93 -3.70 42.25 0 0 3.337</pose>
+    </include>
+    <include>
+      <name>falling_rock1_128</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>8.93 -27.31 39.14 0 0 5.010</pose>
+    </include>
+    <include>
+      <name>falling_rock1_129</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-10.01 -34.11 37.11 0 0 0.577</pose>
+    </include>
+    <include>
+      <name>falling_rock1_130</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-16.14 1.68 43.47 0 0 1.584</pose>
+    </include>
+    <include>
+      <name>falling_rock1_131</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-7.54 -27.76 37.83 0 0 4.750</pose>
+    </include>
+    <include>
+      <name>falling_rock1_132</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>8.09 -51.86 37.79 0 0 3.102</pose>
+    </include>
+    <include>
+      <name>falling_rock1_133</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-10.77 9.64 44.20 0 0 1.804</pose>
+    </include>
+    <include>
+      <name>falling_rock1_134</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-20.85 -31.00 39.41 0 0 0.487</pose>
+    </include>
+    <include>
+      <name>falling_rock1_135</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>3.24 -15.98 39.52 0 0 4.351</pose>
+    </include>
+    <include>
+      <name>falling_rock1_136</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-30.90 -4.84 41.86 0 0 0.381</pose>
+    </include>
+    <include>
+      <name>falling_rock1_137</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>6.36 -9.30 40.15 0 0 1.367</pose>
+    </include>
+    <include>
+      <name>falling_rock1_138</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-31.04 10.97 39.70 0 0 2.918</pose>
+    </include>
+    <include>
+      <name>falling_rock1_139</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-25.22 -27.84 40.82 0 0 3.448</pose>
+    </include>
+    <include>
+      <name>falling_rock1_140</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>23.22 -11.49 40.37 0 0 0.110</pose>
+    </include>
+    <include>
+      <name>falling_rock1_141</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-18.80 5.42 43.30 0 0 6.246</pose>
+    </include>
+    <include>
+      <name>falling_rock1_142</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-12.90 4.49 43.75 0 0 5.844</pose>
+    </include>
+    <include>
+      <name>falling_rock1_143</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-15.61 -24.78 39.35 0 0 3.291</pose>
+    </include>
+    <include>
+      <name>falling_rock1_144</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>13.51 3.74 41.80 0 0 3.195</pose>
+    </include>
+    <include>
+      <name>falling_rock1_145</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-13.16 -28.60 38.15 0 0 5.638</pose>
+    </include>
+    <include>
+      <name>falling_rock1_146</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-32.46 3.75 40.60 0 0 5.966</pose>
+    </include>
+    <include>
+      <name>falling_rock1_147</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-34.80 -23.87 41.68 0 0 0.884</pose>
+    </include>
+    <include>
+      <name>falling_rock1_148</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>-0.96 -5.39 41.02 0 0 2.081</pose>
+    </include>
+    <include>
+      <name>falling_rock1_149</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>2.38 -25.80 38.59 0 0 0.754</pose>
+    </include>
+    <include>
+      <name>falling_rock1_150</name>
+      <uri>model://Falling Rock 1</uri>
+      <pose>5.20 -46.22 37.98 0 0 1.820</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_151</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>10.51 -5.04 40.89 0 0 5.463</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_152</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-17.37 -15.04 41.24 0 0 1.728</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_153</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-11.84 -19.47 39.47 0 0 4.157</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_154</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-21.26 -28.88 39.41 0 0 1.669</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_155</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-35.81 9.96 38.32 0 0 4.931</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_156</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-16.00 -10.46 42.08 0 0 3.962</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_157</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-43.27 -8.62 39.92 0 0 0.311</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_158</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-38.06 -19.59 41.29 0 0 0.870</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_159</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-5.47 23.70 45.15 0 0 5.820</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_160</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>14.11 -19.18 39.92 0 0 1.769</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_161</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>0.60 -33.16 38.04 0 0 1.634</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_162</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-26.79 -15.88 42.27 0 0 4.201</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_163</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-8.62 -17.71 39.57 0 0 1.305</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_164</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-11.17 21.04 44.40 0 0 5.691</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_165</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-9.52 22.44 44.79 0 0 1.208</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_166</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-6.05 -12.14 40.16 0 0 2.005</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_167</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>1.68 3.07 42.22 0 0 5.572</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_168</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-21.45 -32.62 38.95 0 0 4.684</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_169</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>3.81 -21.65 38.93 0 0 0.390</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_170</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-5.30 -12.42 40.16 0 0 4.313</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_171</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-41.91 -17.30 40.83 0 0 1.356</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_172</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>9.36 -13.95 40.05 0 0 4.056</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_173</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-11.52 -4.52 42.30 0 0 5.482</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_174</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-4.67 -15.55 39.49 0 0 4.796</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_175</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-16.63 22.92 43.14 0 0 0.001</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_176</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-9.59 -8.29 41.48 0 0 3.315</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_177</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-21.59 -0.70 43.01 0 0 0.685</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_178</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>23.54 -7.72 40.70 0 0 0.684</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_179</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-7.13 8.13 43.90 0 0 4.803</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_180</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-14.87 8.41 43.78 0 0 0.009</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_181</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>11.87 -7.26 40.67 0 0 4.054</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_182</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>14.58 -11.55 40.55 0 0 3.317</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_183</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-29.68 -3.69 42.06 0 0 0.442</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_184</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-24.09 -6.29 42.70 0 0 1.638</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_185</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-5.88 20.14 44.95 0 0 1.894</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_186</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-29.69 8.20 40.38 0 0 5.272</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_187</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>3.16 -26.35 38.62 0 0 1.552</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_188</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-30.46 -6.93 42.04 0 0 0.137</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_189</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-18.55 -8.12 42.64 0 0 0.509</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_190</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-0.51 -45.16 37.21 0 0 1.424</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_191</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-16.06 -35.85 37.54 0 0 2.275</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_192</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-23.14 15.70 41.33 0 0 4.642</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_193</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-20.00 0.08 43.13 0 0 1.259</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_194</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-2.05 15.02 44.48 0 0 1.391</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_195</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-1.51 18.15 44.72 0 0 3.916</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_196</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-27.14 1.66 41.88 0 0 2.619</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_197</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-16.18 -22.00 39.84 0 0 5.790</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_198</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-5.66 1.33 42.77 0 0 0.891</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_199</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-12.71 -27.91 38.46 0 0 2.824</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_200</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-16.65 -35.96 37.54 0 0 6.264</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_201</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>6.91 -22.30 39.19 0 0 5.877</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_202</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-35.15 -24.62 41.59 0 0 4.555</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_203</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-10.50 26.67 44.37 0 0 1.063</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_204</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-8.02 -20.60 39.13 0 0 2.639</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_205</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-25.35 -28.03 40.82 0 0 2.387</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_206</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>2.44 5.86 42.67 0 0 2.716</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_207</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-12.92 -28.05 38.46 0 0 3.401</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_208</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-25.29 8.50 41.52 0 0 5.633</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_209</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-15.87 -27.35 38.87 0 0 3.928</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_210</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-25.97 1.08 42.30 0 0 0.393</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_211</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-11.93 -7.43 41.85 0 0 5.643</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_212</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-3.00 -2.43 41.79 0 0 5.990</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_213</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-12.37 -8.09 41.91 0 0 1.988</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_214</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-1.93 5.16 42.98 0 0 3.740</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_215</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-19.19 4.84 43.30 0 0 0.152</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_216</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>20.81 -18.46 39.91 0 0 2.925</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_217</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-10.01 25.40 44.61 0 0 2.700</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_218</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-21.20 8.28 42.75 0 0 0.055</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_219</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-32.07 -13.15 42.19 0 0 0.950</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_220</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>5.95 -20.39 39.35 0 0 2.272</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_221</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-13.72 14.82 44.00 0 0 2.460</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_222</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>9.72 -24.07 39.42 0 0 0.213</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_223</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-34.72 -5.72 41.25 0 0 2.679</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_224</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-4.23 -22.89 38.47 0 0 0.528</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_225</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-34.91 -9.55 41.59 0 0 6.105</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_226</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>10.59 -18.06 39.95 0 0 3.896</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_227</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-26.47 -15.05 42.27 0 0 4.860</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_228</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>7.66 32.82 45.35 0 0 1.845</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_229</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-30.36 2.60 40.96 0 0 1.635</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_230</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-28.18 7.23 40.83 0 0 0.963</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_231</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-28.35 -1.20 42.07 0 0 1.580</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_232</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>3.14 -27.66 38.61 0 0 5.077</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_233</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-29.94 -25.64 41.48 0 0 0.028</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_234</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-3.67 30.67 45.63 0 0 2.348</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_235</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>2.61 -5.72 40.68 0 0 3.771</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_236</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-22.82 10.55 41.89 0 0 2.338</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_237</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>0.53 31.91 45.97 0 0 4.867</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_238</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-23.52 -27.62 40.37 0 0 3.744</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_239</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-31.06 -2.23 41.62 0 0 2.135</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_240</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-9.31 -15.73 40.03 0 0 3.764</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_241</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-13.36 -34.70 37.23 0 0 5.142</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_242</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-30.80 -4.71 41.86 0 0 1.961</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_243</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>19.98 -25.30 39.19 0 0 3.036</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_244</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-21.03 5.85 42.89 0 0 3.455</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_245</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-40.33 -28.97 40.69 0 0 2.498</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_246</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-3.90 -4.65 41.29 0 0 1.932</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_247</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-15.72 -11.59 41.68 0 0 2.243</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_248</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-13.03 2.23 43.53 0 0 5.038</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_249</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-22.80 -12.46 42.38 0 0 1.279</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_250</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-16.08 -20.23 40.32 0 0 0.713</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_251</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-26.77 -11.99 42.43 0 0 2.894</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_252</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>11.67 -25.23 39.48 0 0 0.895</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_253</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-1.55 18.83 44.87 0 0 3.907</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_254</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>1.85 -14.10 39.40 0 0 2.185</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_255</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-10.67 -30.08 37.75 0 0 0.683</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_256</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-27.93 -15.47 42.28 0 0 5.054</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_257</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>17.37 6.80 42.08 0 0 6.126</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_258</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-33.14 11.79 38.56 0 0 3.996</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_259</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-0.95 -29.44 37.90 0 0 5.178</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_260</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-1.62 -41.05 37.37 0 0 3.900</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_261</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-19.97 -18.16 41.29 0 0 1.149</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_262</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>30.19 -21.86 37.91 0 0 0.983</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_263</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>7.15 -3.86 40.90 0 0 4.552</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_264</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>20.85 -24.41 39.12 0 0 4.757</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_265</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-15.21 -29.28 38.32 0 0 2.448</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_266</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-40.31 -3.43 39.86 0 0 1.923</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_267</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-30.73 6.84 40.13 0 0 2.444</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_268</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-6.84 -5.42 41.62 0 0 0.147</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_269</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-19.57 -5.12 42.89 0 0 2.806</pose>
+    </include>
+    <include>
+      <name>small_rock_fall_270</name>
+      <uri>model://Small Rock Fall</uri>
+      <pose>-27.73 -14.04 42.31 0 0 1.128</pose>
+    </include>
+    </world>
+</sdf>
